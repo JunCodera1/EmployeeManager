@@ -3,10 +3,10 @@ package Employee;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeManager {
+public class EmployeesManager {
 	private List<Employee> employees;
 	
-	public EmployeeManager() {
+	public EmployeesManager() {
 		this.employees = new ArrayList<>();
 	}
 	
