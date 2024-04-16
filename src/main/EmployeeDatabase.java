@@ -22,6 +22,7 @@ class EmployeeDatabase {
 
     public void updateEmployee(String ID, Employee updatedEmployee) {
         for (int i = 0; i < employees.size(); i++) {
+        	// get value i , id around 0 to employees.size() - 1
             if (employees.get(i).ID.equals(ID)) {
                 employees.set(i, updatedEmployee);
                 break;
@@ -46,11 +47,12 @@ class EmployeeDatabase {
                 writer.println(employee.ID + "," + employee.FullName + "," + employee.BirthDay + "," +
                         employee.Phone + "," + employee.Email + "," + employee.Employee_type + "," + employee.Employee_count);
             }
-        } catch (IOException e) {
+        } catch (IOException e) {	
             e.printStackTrace();
         }
     }
-
+    
+    //Read files
     public void readFromCSV(String filename) {
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
