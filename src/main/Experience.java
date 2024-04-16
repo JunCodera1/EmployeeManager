@@ -10,7 +10,8 @@ public class Experience extends Employee {
         this.ExpInYear = ExpInYear;
         this.ProSkill = ProSkill;
     }
-
+    
+    //Extends
     @Override
     public void showInfo() {
         super.showInfo();

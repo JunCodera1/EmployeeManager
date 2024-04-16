@@ -10,6 +10,10 @@ import java.util.List;
 
 class EmployeeDatabase {
     private List<Employee> employees;
+    private List<Experience> experiences;
+    private List<Fresher> freshers;
+    private List<Intern> interns;
+
 
     public EmployeeDatabase() {
         this.employees = new ArrayList<>();

@@ -12,7 +12,8 @@ class Intern extends Employee {
         this.Semester = Semester;
         this.University_name = University_name;
     }
-
+    
+    //Extends
     @Override
     public void showInfo() {
         super.showInfo();

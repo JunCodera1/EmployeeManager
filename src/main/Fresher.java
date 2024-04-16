@@ -12,7 +12,8 @@ public class Fresher extends Employee {
         this.Graduation_rank = Graduation_rank;
         this.Education = Education;
     }
-
+    
+    //Extends
     @Override
     public void showInfo() {
         super.showInfo();
